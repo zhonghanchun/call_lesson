@@ -1,0 +1,212 @@
+/*---------------------
+  Watches
+-----------------------*/
+.broadcasts__match {
+    margin-bottom: 90px;
+}
+
+.broadcasts__match__content {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    padding: 40px 50px;
+}
+
+.broadcasts__match__team {
+    overflow: hidden;
+}
+
+.broadcasts__match__team__pic {
+    float: left;
+    margin-right: 32px;
+}
+
+.broadcasts__match__team__text {
+    overflow: hidden;
+    padding-top: 24px;
+
+    h4 {
+        color: $heading-color-2;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+
+    span {
+        color: #888888;
+        font-size: 15px;
+        display: block;
+    }
+}
+
+.broadcasts__match__time {
+    text-align: center;
+    
+    h5 {
+        color: $heading-color-2;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+}
+
+.broadcasts__match__full__time {
+    background: $heading-color-2;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px 10px;
+
+    span {
+        font-size: 15px;
+        color: $white-color;
+        background: $primary-color;
+        display: inline-block;
+        padding: 4px 12px 2px;
+    }
+    
+    h4 {
+        color: $white-color;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+}
+
+.broadcasts__match__team--second {
+
+    .broadcasts__match__team__pic {
+        float: right;
+        margin-right: 0;
+        margin-left: 32px;
+    }
+
+    .broadcasts__match__team__text {
+        text-align: right;
+    }
+}
+
+.broadcasts__match__video {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .play-btn {
+        display: inline-block;
+        font-size: 30px;
+        color: $primary-color;
+        height: 70px;
+        width: 70px;
+        background: $white-color;
+        line-height: 70px;
+        text-align: center;
+        border-radius: 50%;
+    }
+}
+
+.upcoming__match__item__list {
+    padding: 30px 0 30px 80px;
+}
+
+.upcoming__match__item__team__text {
+    overflow: hidden;
+    padding-top: 10px;
+
+    h5 {
+        color: $heading-color-2;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    span {
+        color: #888888;
+        font-size: 15px;
+        display: block;
+    }
+}
+
+.upcoming__match__item__team__pic {
+    float: left;
+    margin-right: 30px;
+}
+
+.upcoming__match__item {
+    padding: 0 15px;
+    border: 1px solid #dddddd;
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+
+        .upcoming__match__league {
+            background: $primary-color;
+        }
+    }
+}
+
+.upcoming__match__item__team {
+    overflow: hidden;
+}
+
+.upcoming__match__item__team--first {
+
+    .upcoming__match__item__team__pic {
+        float: right;
+        margin-right: 0;
+        margin-left: 30px;
+    }
+
+    .upcoming__match__item__team__text {
+        text-align: right;
+    }
+}
+
+.upcoming__match__versus {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    color: $heading-color-2;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.live-btn {
+    text-align: center;
+    margin-top: 13px;
+
+    span {
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        color: $white-color;
+        background: $heading-color-2;
+        padding: 10px 30px 12px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+}
+
+.upcoming__match__league {
+    background: $heading-color-2;
+    text-align: right;
+    padding: 43px 50px 37px;
+    -webkit-clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(11% 0, 100% 0, 100% 100%, 0% 100%);
+    margin: -1px;
+    @include transition(all, .5s);
+
+    h5 {
+        color: $white-color;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    span {
+        font-size: 15px;
+        color: #b1b1b1;
+        display: block;
+    }
+}

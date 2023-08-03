@@ -1,0 +1,130 @@
+/*---------------------
+  About
+-----------------------*/
+.about {
+    padding-bottom: 70px;
+}
+
+.about__text {
+    text-align: center;
+    margin-bottom: 50px;
+
+    p {
+        color: $heading-color-2;
+        font-size: 24px;
+        line-height: 40px;
+        font-family: $fm-oswald;
+        margin-bottom: 0;
+    }
+}
+
+.about__video {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    .play-btn {
+        display: inline-block;
+        font-size: 30px;
+        color: $primary-color;
+        height: 70px;
+        width: 70px;
+        background: $white-color;
+        line-height: 70px;
+        text-align: center;
+        border-radius: 50%;
+    }
+}
+
+.about__services__item {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h4 {
+        color: $heading-color-2;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 22px;
+    }
+
+    p {
+        color: $heading-color-2;
+        line-height: 27px;
+        margin-bottom: 0;
+    }
+}
+
+/*---------------------
+  Team
+-----------------------*/
+.testimonial {
+    padding-bottom: 70px;
+}
+
+.testimonial__item {
+    position: relative;
+    margin-bottom: 30px;
+
+    .quote-icon {
+        height: 46px;
+        width: 60px;
+        font-size: 20px;
+        color: $primary-color;
+        background: $heading-color-2;
+        line-height: 46px;
+        text-align: center;
+        -webkit-clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(21% 0, 100% 0, 100% 100%, 0 100%);
+        position: absolute;
+        left: 0;
+        top: 30px;
+        z-index: 9;
+    }
+}
+
+.testimonial__item__text {
+    background: #dddddd;
+    padding: 35px 40px 25px 75px;
+    -webkit-clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        height: calc(100% - 2px);
+        width: calc(100% - 2px);
+        background: $white-color;
+        content: "";
+        z-index: -1;
+        -webkit-clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .testimonial__item__author {
+        margin-bottom: 15px;
+
+        h6 {
+            color: $heading-color-2;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        span {
+            color: #888888;
+            display: block;
+            font-size: 14px;
+        }
+    }
+
+    p {
+        color: $heading-color-2;
+        line-height: 27px;
+        margin-bottom: 0;
+    }
+}

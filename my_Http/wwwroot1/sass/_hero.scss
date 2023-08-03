@@ -1,0 +1,181 @@
+/*---------------------
+  Hero
+-----------------------*/
+.hero {
+    position: relative;
+    padding: 116px 0;
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.hero__text {
+    background: linear-gradient(to right,rgba(0, 0, 0, 0),rgba(0, 0, 0, 1),rgba(0, 0, 0, 0));
+    text-align: center;
+    padding: 70px 40px;
+
+    .label {
+        font-size: 20px;
+        color: $white-color;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        color: $white-color;
+        font-size: 60px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 35px;
+    }
+}
+
+.hero__countdown {
+
+    .cd__item {
+        display: inline-block;
+        text-align: center;
+        margin-right: 35px;
+        margin-bottom: 20px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            right: -23px;
+            top: 12px;
+            content: ":";
+            font-size: 30px;
+            font-weight: 500;
+            color: $white-color;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        h3 {
+            color: $primary-color;
+            font-size: 40px;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: inline-block;
+            padding: 12px 15px 14px;
+            -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+            margin-bottom: 6px;
+            min-width: 100px;
+            
+            span {
+                display: inline-block;
+                -webkit-transform: skewX(15deg);
+                transform: skewX(15deg);
+            }
+        }
+
+        p {
+            color: $white-color;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.hero__slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    &.owl-carousel {
+
+        .owl-nav {
+
+            button {
+                height: 100px;
+                width: 100px;
+                background: #100303;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                font-size: 40px;
+                color: $white-color;
+                position: absolute;
+                left: -50px;
+                top: 50%;
+                margin-top: -50px;
+                z-index: 9;
+
+                &.owl-next {
+                    left: auto;
+                    right: -50px;
+
+                    i {
+                        left: -14px;
+                        top: 14px;
+                    }
+                }
+
+                i {
+                    display: inline-block;
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    position: relative;
+                    left: 14px;
+                    top: -13px;
+                }
+            }
+        }
+
+        .owl-dots {
+            position: absolute;
+            left: 0;
+            bottom: 25px;
+            width: 100%!important;
+            text-align: center;
+
+            button {
+                height: 15px;
+                width: 15px;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 50%;
+                margin-right: 10px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    left: 7px;
+                    top: -4px;
+                    height: 24px;
+                    width: 2px;
+                    background: #ffffff;
+                    content: "";
+                    transform: rotate(25deg);
+                    opacity: 0;
+                }
+
+                &.active {
+                    background: $white-color;
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.hero__slider .owl-stage-outer, .hero__slider .owl-stage, .hero__slider .owl-item, .hero__slider .hero__items {
+    height: 100%;
+}

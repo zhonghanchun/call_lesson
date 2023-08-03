@@ -1,0 +1,343 @@
+/*---------------------
+  Checkout
+-----------------------*/
+.checkout__form__top {
+  padding-bottom: 25px;
+
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    color: $heading-color;
+  }
+
+  h6 {
+    font-size: 15px;
+    color: $heading-color;
+    text-align: center;
+
+    a {
+      color: $primary-color;
+    }
+  }
+}
+
+.checkout__form {
+
+  form {
+
+    .input__top {
+      margin-bottom: 38px;
+
+      input {
+        height: 46px;
+        width: 100%;
+        padding-left: 20px;
+        font-size: 15px;
+        color: #888888;
+        border: 1px solid #dddddd;
+        margin-bottom: 15px;
+
+        &::placeholder {
+          color: #888888;
+        }
+      }
+    }
+
+    label {
+      position: relative;
+      font-size: 15px;
+      color: $heading-color-2;
+      cursor: pointer;
+      padding-left: 30px;
+      margin-bottom: 0;
+
+      input {
+        position: absolute;
+        visibility: hidden;
+
+        &:checked {
+
+          &~.checkmark {
+            background: $primary-color;
+            border-color: $primary-color;
+
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .checkmark {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        height: 12px;
+        width: 12px;
+        border: 1px solid $heading-color-2;
+        border-radius: 2px;
+        content: "";
+
+        &:after {
+          position: absolute;
+          left: 0px;
+          top: -1px;
+          width: 13px;
+          height: 7px;
+          border: solid $white-color;
+          border-width: 2px 2px 0px 0px;
+          -webkit-transform: rotate(127deg);
+          -ms-transform: rotate(127deg);
+          transform: rotate(127deg);
+          content: "";
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .site-btn {
+    width: 100%;
+  }
+}
+
+.checkout__address {
+
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    color: $heading-color-2;
+    margin-bottom: 24px;
+  }
+
+  .input__item {
+    margin-bottom: 25px;
+
+    &.double__input {
+
+      input {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    p {
+      color: $heading-color-2;
+      margin-bottom: 10px;
+
+      span {
+        color: $primary-color;
+      }
+    }
+
+    input {
+      height: 46px;
+      width: 100%;
+      padding-left: 20px;
+      font-size: 15px;
+      color: #888888;
+      border: 1px solid #dddddd;
+
+      &::placeholder {
+        color: #888888;
+      }
+    }
+  }
+}
+
+.checkout__proceed {
+  background: $heading-color-2;
+  padding: 30px;
+
+  .checkout__proceed__title {
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 14px;
+      height: 1px;
+      width: 100%;
+      background: #444444;
+      content: "";
+      z-index: -1;
+    }
+
+    h4 {
+      color: $white-color;
+      margin-bottom: 38px;
+      display: inline-block;
+      font-family: 'Roboto', sans-serif;
+      background: $heading-color-2;
+      padding: 0 15px 0 0;
+      position: relative;
+    }
+  }
+
+  .proceed__btn {
+    font-size: 16px;
+    color: $white-color;
+    background: $primary-color;
+    padding: 10px 20px 12px;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.checkout__proceed__coupon {
+  margin-bottom: 50px;
+
+  p {
+    color: $white-color;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .coupon__input {
+    position: relative;
+
+      input {
+        height: 46px;
+        width: 100%;
+        border: 1px solid #444444;
+        font-size: 15px;
+        color: #888888;
+        padding-left: 20px;
+        background: transparent;
+
+        &::placeholder {
+            color: #888888;
+            font-size: 15px;
+        }
+    }
+
+    button {
+        color: $white-color;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background: $primary-color;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        padding: 0 30px;
+    }
+  }
+}
+
+.checkout__proceed__product {
+  border-bottom: 1px solid #444444;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+
+  h5 {
+    color: $white-color;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+  }
+
+  ul {
+
+    li {
+      list-style: none;
+      font-size: 15px;
+      color: $white-color;
+      overflow: hidden;
+      line-height: 36px;
+
+      span {
+        float: right;
+      }
+    }
+  }
+}
+
+.checkout__proceed__total {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+
+  li {
+    list-style: none;
+    font-size: 20px;
+    color: $white-color;
+    line-height: 36px;
+    overflow: hidden;
+
+    span {
+      font-size: 16px;
+      float: right;
+    }
+  }
+}
+
+.checkout__proceed__widget {
+  margin-bottom: 40px;
+
+  label {
+    position: relative;
+    font-size: 16px;
+    color: $white-color!important;
+    cursor: pointer;
+    padding-left: 30px;
+    display: block;
+    margin-bottom: 5px!important;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    input {
+      position: absolute;
+      visibility: hidden;
+
+      &:checked {
+
+        &~.checkmark {
+          background: $primary-color;
+          border-color: $primary-color!important;
+
+          &:after {
+            opacity: 1;
+
+          }
+        }
+      }
+    }
+
+    .checkmark {
+      position: absolute;
+      left: 0;
+      top: 6px;
+      height: 12px;
+      width: 12px;
+      border: 1px solid $white-color!important;
+      border-radius: 2px;
+      content: "";
+
+      &:after {
+        position: absolute;
+        left: 0px;
+        top: -1px;
+        width: 13px;
+        height: 7px;
+        border: solid $white-color;
+        border-width: 2px 2px 0px 0px;
+        -webkit-transform: rotate(127deg);
+        -ms-transform: rotate(127deg);
+        transform: rotate(127deg);
+        content: "";
+        opacity: 0;
+      }
+    }
+  }
+}
